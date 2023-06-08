@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Ubuntu:wght@500&display=swap');
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0.5rem;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    font-family: 'Monomaniac One', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+li{
+    display: inline-block;
+    margin: 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-family: 'Monomaniac One', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
