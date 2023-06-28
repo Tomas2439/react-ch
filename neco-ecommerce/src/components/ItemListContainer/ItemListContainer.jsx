@@ -1,9 +1,20 @@
-import React from 'react'
-import './ItemListContainer.css'
+import { useState, useEffect } from 'react'
+import { getProductos } from '../../asynmock'
+import ItemList from '../ItemList/ItemList'
 
-const ItemListContainer = ({greeting}) =>{
+const ItemListContainer = () =>{
+    const [productos, setProductos] = useState([]);
+    useEffect( ()=> {
+        getProductos()
+            .then(respuesta => setProductos(respuesta))
+    },[])
+
+
     return(
-        <h2>{greeting}</h2>
+        <div>
+            <h2>Colección en Venta</h2>
+            <ItemList productos={productos}/>
+        </div>
     )
 }
-export default ItemListContainer
+export default ItemListContainer;

@@ -19,7 +19,7 @@ const productos = [
     },
     {
         id:'3',
-        name: 'Manga Tokyo Revengers Volumen 14',
+        name: 'Manga Tokyo Revengers Vol. 14',
         price: 2000,
         category: 'Mangas',
         img: 'https://http2.mlstatic.com/D_NQ_NP_882854-MLA54072465450_022023-O.webp',
@@ -28,7 +28,7 @@ const productos = [
     },
     {
         id:'4',
-        name: 'Figura Shigaraki Tomura - Boku no Hero',
+        name: 'Figura Shigaraki Tomura - BNHA',
         price: 12000,
         category: 'Figuras',
         img: 'https://http2.mlstatic.com/D_NQ_NP_725184-MLA48975670293_012022-O.webp',
@@ -58,7 +58,7 @@ const productos = [
 export const getProductos = () => {
     return new Promise((resolve) => {
         setTimeout(()=> {
-            resolve(products)
-        },1500)
+            resolve(productos)
+        },500)
     })
 }
