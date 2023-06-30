@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Ubuntu:wght@500&display=swap');
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 0.5em;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    font-family: 'Monomaniac One', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
-}
-li{
-    display: inline-block;
-    margin: 1rem;
-    font-size: 1.3rem;
-    cursor: pointer;
-    font-family: 'Monomaniac One', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
-}
+
+    .Navbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+        height: 5em;
+        background-color: #7a5357e5;
+        font-family: 'Monomaniac One', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .Categories li{
+        display: inline;
+        margin: auto;
+        list-style:none;
+        font-size: 1.5em;
+        color: #dcd5c2;
+        padding: 0.3em;
+        text-decoration: none;
+    }
+    .Logo{
+        font-size: 2em;
+        color:#141414;
+    }

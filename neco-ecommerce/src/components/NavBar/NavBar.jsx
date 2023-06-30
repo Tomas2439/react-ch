@@ -1,18 +1,28 @@
-import './NavBar.css'
-import CartWidget from '../CartWidget/CartWidget'
-const NavBar = () => {
+import CartWidget from "../CartWidget/CartWidget"
+import './Navbar.css'
+import {NavLink, Link} from 'react-router-dom'
+
+const Navbar = () => {
     return(
-        <header className='navbar'>
-            <h1 className='logo'>Neco Ecommerce</h1>
-            <nav className='botones'>
+        <nav className="Navbar">
+            <Link to='/'>
+                <h3 className="Logo">NecoOtaku</h3>
+            </Link>
+            <div className="Categories">
                 <ul>
-                    <li>Figuras</li>
-                    <li>Mangas</li>
-                    <li>Colección</li>
+                    <li>
+                        <NavLink to={'/category/Figuras'} > Figuras </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={'/category/Mangas'}> Mangas </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={'/category/Coleccion'}> Coleccion </NavLink>
+                    </li>
                 </ul>
-            </nav>
+            </div>
             <CartWidget/>
-        </header>
+        </nav>
     )
 }
-export default NavBar
+export default Navbar;

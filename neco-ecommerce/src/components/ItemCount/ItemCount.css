@@ -1,24 +1,31 @@
-.Contador{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.Controles{
+.Controls{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 15%;
 }
-.Boton{
-    height: 2em;
-    width: 2em;
-    text-align:inline;
-    font-size: .7em;
+.Number{
+    font-size: 2em;
+    color: #242424;
 }
-.Agregar{
-    width: 100%;
+.Controls .Button{
+    width: 2rem;
+    font-size: 1em;
+    height: 2rem;
+    margin: 0rem 1rem;
+    border-radius: 8px;
+    border:none;
+}
+.Button{
+    background-color: #0080ffc0;
+    transition: background-color 0.3s ease-in-out;
+    height: 2rem;
+    color: #000000;
+    margin: 0px 0px;
+    border: none;
+    border-radius: 5px;
+}
+.Button:hover{
+    background-color: #0059b3;
+    color: #fff;
 }

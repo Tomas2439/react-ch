@@ -1,6 +1,8 @@
-import ItemCount from   '../ItemCount/ItemCount'
+import './ItemDetail.css'
+import ItemCount from '../ItemCount/ItemCount.jsx'
+import Item from '../Item/Item'
 
-const ItemDetail = ({ id, name, price,category, img, description, stock}) =>{
+const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
     return(
         <article className='CardItem'>
             <header className='Header'>
@@ -10,8 +12,8 @@ const ItemDetail = ({ id, name, price,category, img, description, stock}) =>{
                 <img src={img} alt={name}  className='ItemImg'/>
             </picture>
             <section>
-                <p className='Info'>Categoria: {category}</p>
-                <p className='Info'>Descripción: {description}</p>
+                <p className='Info'>Categoria:{category}</p>
+                <p className='Info'>Descripción:{description}</p>
                 <p className='Info'>Precio: ${price}</p>
             </section>
             <footer className='ItemFooter'>

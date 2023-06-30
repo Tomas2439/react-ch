@@ -1,4 +1,4 @@
-const productos = [
+const products = [
     {
         id:'1',
         name: 'Figura Zoro Wano - One Piece',
@@ -55,17 +55,25 @@ const productos = [
     }
 ]
 
-export const getProductos = () => {
+export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout(()=> {
-            resolve(productos)
+            resolve(products)
         },500)
     })
 }
-export const getUnProducto = (productoId) => {
-    return new Promise( (resolve) => {
-        setTimeout(() => {
-            resolve(productos.find(prod => prod.id === productoId))
-        },1000)
+
+export const getProductById = (productId) => {
+    return new Promise((resolve)=>{
+        setTimeout(()=> {
+            resolve(products.find(prod => prod.id === productId))
+        },500)
+    })
+}
+export const getProductsByCategory  = (categoryId) => {
+    return new Promise((resolve)=>{
+        setTimeout(()=> {
+            resolve(products.filter(prod => prod.category === categoryId))
+        },500)
     })
 }
